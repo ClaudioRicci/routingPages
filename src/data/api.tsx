@@ -1,19 +1,49 @@
-// const dataAPI = {
-//   players: [
-//     { number: 1, name: "Ben Blocker", position: "G" },
-//     { number: 2, name: "Dave Defender", position: "D" },
-//     { number: 3, name: "Sam Sweeper", position: "D" },
-//     { number: 4, name: "Matt Midfielder", position: "M" },
-//     { number: 5, name: "William Winger", position: "M" },
-//     { number: 6, name: "Fillipe Forward", position: "F" }
-//   ],
-//   all: function() {
-//     return this.players;
-//   },
-//   get: function(id) {
-//     const isPlayer = p => p.number === id;
-//     return this.players.find(isPlayer);
-//   }
-// };
+const dataAPI = [
+  {
+    path: "/page-a",
+    linkTitle: "Page A",
+    pageTitle: "Page A Title",
+    pageDescription: "ipsum dolor sit amet...page A",
+    table: {
+      apiEndpoint: "/page-a-data.json",
+      columns: [
+        { title: "Name" },
+        { title: "Email" },
+        { location: "Location" },
+        { isOnline: "Is Online" }
+      ]
+    }
+  },
+  {
+    path: "/page-b",
+    linkTitle: "Page B`",
+    pageTitle: "Page B Title",
+    pageDescription: "ipsum dolor sit amet... page B",
+    table: {
+      apiEndpoint: "/page-b-data.json",
+      columns: [
+        { title: "Name" },
+        { title: "Email" },
+        { location: "Location" },
+        { isOnline: "Is Online" }
+      ]
+    }
+  },
+  {
+    path: "/page-c",
+    linkTitle: "Page C",
+    pageTitle: "Page C Title",
+    pageDescription: "ipsum dolor sit amet... page C",
+    table: {
+      apiEndpoint: "/page-c-data.json",
+      columns: [
+        { title: "Name" },
+        { title: "Email" },
+        { location: "Location" },
+        { isOnline: "Is Online" }
+      ]
+    }
+  }
+];
 
-// export default dataAPI;
+export default dataAPI;
