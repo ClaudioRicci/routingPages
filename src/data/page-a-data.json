@@ -1,0 +1,8 @@
+[
+  {
+    "name": "Jane Doe",
+    "email": "jane.doe@example.com",
+    "location": "London",
+    "isOnline": false
+  }
+]

@@ -9,8 +9,8 @@ const dataAPI = [
       columns: [
         { title: "Name" },
         { title: "Email" },
-        { location: "Location" },
-        { isOnline: "Is Online" }
+        { title: "Location" },
+        { title: "Is Online" }
       ]
     }
   },
@@ -24,8 +24,8 @@ const dataAPI = [
       columns: [
         { title: "Name" },
         { title: "Email" },
-        { location: "Location" },
-        { isOnline: "Is Online" }
+        { title: "Location" },
+        { title: "Is Online" }
       ]
     }
   },
@@ -39,8 +39,8 @@ const dataAPI = [
       columns: [
         { title: "Name" },
         { title: "Email" },
-        { location: "Location" },
-        { isOnline: "Is Online" }
+        { title: "Location" },
+        { title: "Is Online" }
       ]
     }
   }
