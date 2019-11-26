@@ -21,7 +21,10 @@ function Panel() {
     <main key={uuid.v4()} role="main" data-testid="Panel">
       <h1>{location.state.title}</h1>
       <p>{location.state.description}</p>
-      <Table />
+      <Table
+        tableColumns={location.state.tableColumms}
+        dataUrl={location.state.dataUrl}
+      />
       {/* <p>Page: {page}</p>
       <p>Location: {location.pathname}</p>
       <p>State: {location.state.from}</p> */}

@@ -3,3 +3,8 @@ export interface PanelProps {
   description: string;
   data: any;
 }
+
+export interface TableProps {
+  tableColumns: any;
+  dataUrl: string;
+}
