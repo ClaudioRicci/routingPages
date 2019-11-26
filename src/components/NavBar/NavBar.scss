@@ -1,0 +1,23 @@
+@import "./../../variables.scss";
+
+ul {
+  display: flex;
+  flex-direction: row;
+
+  li {
+    list-style: none;
+    padding: 0.5rem;
+    width: 10rem;
+
+    width: 70px;
+    height: 0;
+    border-right: 20px solid transparent;
+    border-bottom: 50px solid $skyblue;
+
+    a {
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  }
+}
