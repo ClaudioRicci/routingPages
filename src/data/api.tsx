@@ -16,7 +16,7 @@ const dataAPI = [
   },
   {
     path: "/page-b",
-    linkTitle: "Page B`",
+    linkTitle: "Page B",
     pageTitle: "Page B Title",
     pageDescription: "ipsum dolor sit amet... page B",
     table: {

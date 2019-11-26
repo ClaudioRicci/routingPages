@@ -1,6 +1,8 @@
 import React from "react";
 import "./App.scss";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import uuid from "uuid";
+import dataAPI from "./data/api";
 import Panel from "./components/Panel";
 // import NavBar from "./components/NavBar";
 // import MainContainer from "./components/MainContainer";
@@ -11,20 +13,32 @@ export default function App() {
       <div className="App">
         <header className="App-header">
           <ul>
-            <li>
-              <Link to="/page/page1">Page 1</Link>
-            </li>
-            <li>
-              <Link to="/page/page2">Page 2</Link>
-            </li>
-            <li>
-              <Link to="/page/page3">Page 3</Link>
-            </li>
+            {dataAPI.map(item => {
+              return (
+                <li key={uuid.v4()}>
+                  <Link
+                    to={{
+                      pathname: item.path,
+                      state: {
+                        from: "root"
+                      }
+                    }}
+                  >
+                    {item.linkTitle}
+                  </Link>
+                  {/* <Link to={item.path}>{item.linkTitle}</Link>
+                  <Link to={{
+                    pathname: item.path,
+                    state:{
+                      from: "root"
+                    }
+                  }}></Link> */}
+                </li>
+              );
+            })}
           </ul>
           <Switch>
-            <Route exact path="/page/:page" component={Panel} />
-            {/* <Route exact path="/page2" component={Panel} />
-            <Route exact path="/page3" component={Panel} /> */}
+            <Route exact path="/:page" component={Panel} />
           </Switch>
         </header>
       </div>
