@@ -21,7 +21,9 @@ export default function App() {
                       pathname: item.path,
                       state: {
                         title: item.pageTitle,
-                        description: item.pageDescription
+                        description: item.pageDescription,
+                        tableColumms: item.table.columns,
+                        dataUrl: item.table.apiEndpoint
                       }
                     }}
                   >
