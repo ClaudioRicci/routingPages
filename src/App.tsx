@@ -20,19 +20,13 @@ export default function App() {
                     to={{
                       pathname: item.path,
                       state: {
-                        from: "root"
+                        title: item.pageTitle,
+                        description: item.pageDescription
                       }
                     }}
                   >
                     {item.linkTitle}
                   </Link>
-                  {/* <Link to={item.path}>{item.linkTitle}</Link>
-                  <Link to={{
-                    pathname: item.path,
-                    state:{
-                      from: "root"
-                    }
-                  }}></Link> */}
                 </li>
               );
             })}

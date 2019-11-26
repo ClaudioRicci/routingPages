@@ -3,6 +3,7 @@ import "./Panel.scss";
 import uuid from "uuid";
 import { pure } from "recompose";
 import { useParams, useLocation, useHistory } from "react-router";
+import Table from "../Table";
 
 // import { PanelProps } from "../../interfaces/";
 
@@ -18,9 +19,12 @@ function Panel() {
   console.log(location);
   return (
     <main key={uuid.v4()} role="main" data-testid="Panel">
-      <p>Page: {page}</p>
+      <h1>{location.state.title}</h1>
+      <p>{location.state.description}</p>
+      <Table />
+      {/* <p>Page: {page}</p>
       <p>Location: {location.pathname}</p>
-      <p>State: {location.state.from}</p>
+      <p>State: {location.state.from}</p> */}
       <button onClick={goBackHandle}>Go Back</button>
     </main>
   );
