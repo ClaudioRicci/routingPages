@@ -2,21 +2,32 @@ import React from "react";
 import "./Panel.scss";
 import uuid from "uuid";
 import { pure } from "recompose";
-import { PanelProps } from "../../interfaces/";
+import { useParams, useLocation, useHistory } from "react-router";
+import Table from "../Table";
 
-const Panel: React.SFC<PanelProps> = props => {
+// import { PanelProps } from "../../interfaces/";
+
+function Panel() {
+  const { page } = useParams();
+  const location = useLocation();
+  const history = useHistory();
+
+  function goBackHandle() {
+    history.goBack();
+  }
+
+  console.log(location);
   return (
     <main key={uuid.v4()} role="main" data-testid="Panel">
-      <h1>{props.title}</h1>
-      <p>{props.description}</p>
-      <p>test</p>
+      <h1>{location.state.title}</h1>
+      <p>{location.state.description}</p>
+      <Table />
+      {/* <p>Page: {page}</p>
+      <p>Location: {location.pathname}</p>
+      <p>State: {location.state.from}</p> */}
+      <button onClick={goBackHandle}>Go Back</button>
     </main>
   );
-};
-
-Panel.defaultProps = {
-  title: "My Page",
-  description: "Page description here"
-};
+}
 
 export default pure(Panel);
