@@ -7,14 +7,7 @@ const Main = (props: any) => (
   <main data-testid="MainContainer">
     <Switch>
       {dataAPI.map(item => (
-        <Route
-          {...item}
-          key={item.path}
-          exact
-          path={item.path}
-          {...props}
-          component={Panel}
-        />
+        <Route key={item.path} exact path={item.path} component={Panel} />
       ))}
     </Switch>
   </main>

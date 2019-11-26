@@ -9,14 +9,10 @@ const Panel: React.SFC<PanelProps> = props => {
     <main key={uuid.v4()} role="main" data-testid="Panel">
       <h1>{props.title}</h1>
       <p>{props.description}</p>
-      <p>test</p>
+
+      <p>Test</p>
     </main>
   );
-};
-
-Panel.defaultProps = {
-  title: "My Page",
-  description: "Page description here"
 };
 
 export default pure(Panel);
