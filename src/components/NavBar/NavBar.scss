@@ -1,0 +1,29 @@
+@import "./../../variables.scss";
+
+ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0 $medium;
+  padding: 0;
+
+  li {
+    list-style: none;
+    width: 5rem;
+    height: 0;
+    border-right: 1rem solid transparent;
+    border-bottom: 3rem solid $skyblue;
+
+    a {
+      color: $black;
+      font-weight: bold;
+      padding: $x-small $x-large;
+      position: absolute;
+      text-decoration: none;
+    }
+  }
+
+  li:hover,
+  li:active {
+    border-bottom: 3rem solid $lightgreen;
+  }
+}

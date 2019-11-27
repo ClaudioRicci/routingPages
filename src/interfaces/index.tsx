@@ -1,5 +1,11 @@
 export interface PanelProps {
   title: string;
   description: string;
-  data: any;
+  tableColumms: any;
+  dataUrl: string;
+}
+
+export interface TableProps {
+  tableColumns: any;
+  dataUrl: string;
 }
