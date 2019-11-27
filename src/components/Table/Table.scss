@@ -12,6 +12,10 @@ table {
   tr:nth-child(odd) {
     background: $white;
   }
+
+  .isOnlineCell {
+    text-align: center;
+  }
 }
 
 table,

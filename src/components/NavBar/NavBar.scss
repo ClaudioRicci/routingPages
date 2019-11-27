@@ -3,21 +3,27 @@
 ul {
   display: flex;
   flex-direction: row;
+  margin: 0 $medium;
+  padding: 0;
 
   li {
     list-style: none;
-    padding: 0.5rem;
-    width: 10rem;
-
-    width: 70px;
+    width: 5rem;
     height: 0;
-    border-right: 20px solid transparent;
-    border-bottom: 50px solid $skyblue;
+    border-right: 1rem solid transparent;
+    border-bottom: 3rem solid $skyblue;
 
     a {
-      color: #000;
+      color: $black;
       font-weight: bold;
+      padding: $x-small $x-large;
+      position: absolute;
       text-decoration: none;
     }
+  }
+
+  li:hover,
+  li:active {
+    border-bottom: 3rem solid $lightgreen;
   }
 }

@@ -5,8 +5,6 @@ import { pure } from "recompose";
 import { useLocation } from "react-router";
 import Table from "../Table";
 
-// import { PanelProps } from "../../interfaces/";
-
 function Panel() {
   const location = useLocation();
 
