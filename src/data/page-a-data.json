@@ -4,5 +4,17 @@
     "email": "jane.doe@example.com",
     "location": "London",
     "isOnline": false
+  },
+  {
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "location": "London",
+    "isOnline": true
+  },
+  {
+    "name": "Chris Nadeau",
+    "email": "chris.nadeau@deskpro.com",
+    "location": "Toronto",
+    "isOnline": false
   }
 ]

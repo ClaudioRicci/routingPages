@@ -1,0 +1,8 @@
+@import "./../../variables.scss";
+
+main {
+  border: 1px solid $black;
+  background: $skyblue;
+  margin: 0 $medium;
+  padding: $x-large;
+}
