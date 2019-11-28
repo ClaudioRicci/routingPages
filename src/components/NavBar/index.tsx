@@ -9,6 +9,7 @@ import {
 import uuid from "uuid";
 import dataAPI from "../../data/api";
 import Panel from "../../components/Panel";
+import Home from "../../components/Home";
 import "./NavBar.scss";
 
 const NavBar = () => (
@@ -35,6 +36,7 @@ const NavBar = () => (
       })}
     </ul>
     <Switch>
+      <Route exact path="/" component={Home} />
       <Route exact path="/:page" component={Panel} />
       <Redirect from="/*" to="/" />
     </Switch>

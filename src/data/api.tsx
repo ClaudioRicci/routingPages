@@ -1,5 +1,20 @@
 const dataAPI = [
   {
+    path: "/",
+    linkTitle: "Home",
+    pageTitle: "Home Page Title",
+    pageDescription: "ipsum dolor sit amet...Home Page",
+    table: {
+      apiEndpoint: "/home-page-data.json",
+      columns: [
+        { title: "Name" },
+        { title: "Email" },
+        { title: "Location" },
+        { title: "Is Online" }
+      ]
+    }
+  },
+  {
     path: "/page-a",
     linkTitle: "Page A",
     pageTitle: "Page A Title",
