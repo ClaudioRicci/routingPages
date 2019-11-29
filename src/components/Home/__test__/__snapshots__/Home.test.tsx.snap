@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Matches snapshot 1`] = `
+<main
+  data-testid="Home"
+  role="main"
+>
+  <h1>
+    Home Page
+  </h1>
+  <p>
+    Please select a page from the tabs above
+  </p>
+</main>
+`;
