@@ -1,34 +1,55 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Matches snapshot 1`] = `
-<ul
-  aria-label="Main Navigation"
-  data-testid="NavBar"
-  role="navigation"
->
-  <li>
-    <a
-      href="/page-a"
-      onClick={[Function]}
-    >
-      Page A
-    </a>
-  </li>
-  <li>
-    <a
-      href="/page-b"
-      onClick={[Function]}
-    >
-      Page B
-    </a>
-  </li>
-  <li>
-    <a
-      href="/page-c"
-      onClick={[Function]}
-    >
-      Page C
-    </a>
-  </li>
-</ul>
+Array [
+  <ul
+    aria-label="Main Navigation"
+    data-testid="NavBar"
+    role="navigation"
+  >
+    <li>
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+    </li>
+    <li>
+      <a
+        href="/page-a"
+        onClick={[Function]}
+      >
+        Page A
+      </a>
+    </li>
+    <li>
+      <a
+        href="/page-b"
+        onClick={[Function]}
+      >
+        Page B
+      </a>
+    </li>
+    <li>
+      <a
+        href="/page-c"
+        onClick={[Function]}
+      >
+        Page C
+      </a>
+    </li>
+  </ul>,
+  <main
+    data-testid="Home"
+    role="main"
+  >
+    <h1>
+      Home Page
+    </h1>
+    <p>
+      Please select a page from the tabs above
+    </p>
+  </main>,
+]
 `;
